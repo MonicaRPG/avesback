@@ -20,7 +20,8 @@ public class DireccionAve {
     @JoinColumn(name = "ave_id")
     private Ave ave;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne()
     @JoinColumn(name = "direccion_id")
     private Direccion direccion;
 }

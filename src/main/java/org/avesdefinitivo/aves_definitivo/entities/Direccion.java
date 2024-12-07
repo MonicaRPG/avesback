@@ -38,7 +38,7 @@ public class Direccion {
 
     @OneToMany(mappedBy = "direccion",
             cascade = CascadeType.ALL,
-            orphanRemoval = true ,
+            orphanRemoval = false ,
             fetch = FetchType.EAGER)
     private List<DireccionAve> direccionAves = new ArrayList<>();
 
